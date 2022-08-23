@@ -1,5 +1,7 @@
 # Hello 
 
+Please refer to `.github/workflows/main.yml`
+
 ```yml
 - name: deploy
     id: hello
