@@ -7,17 +7,20 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@master
-
-      - name: Hello world action step
+        
+      # The following code is an example
+      - name: deploy
         id: hello
-        uses: youmengme/upload-lafyun@v0.0.9-test
+        uses: youmengme/upload-lafyun@v1.0
         env:
             USER_ACCOUNT: ${{ secrets.LAF_ACCOUNT }}
             PASSWORD: ${{ secrets.LAF_PASSWORD }}
             APPID: ${{ secrets.LAF_APPID }}
             REGION: ${{ secrets.LAF_REGION }}
             BUCKET: ${{ secrets.LAF_BUCKET }}
-            ASSET_PATH: './docs'
-      # Use the output from the `hello` step
+            ASSET_PATH: './dist'
+      # The code above is an example
+
+
       - name: Get the output time
         run: echo "The time was ${{ steps.hello.outputs.time }}"
