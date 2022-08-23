@@ -10,7 +10,7 @@ jobs:
 
       - name: Hello world action step
         id: hello
-        uses: youmengme/upload-lafyun@v0.0.8-test
+        uses: youmengme/upload-lafyun@v0.0.9-test
         env:
             USER_ACCOUNT: ${{ secrets.LAF_ACCOUNT }}
             PASSWORD: ${{ secrets.LAF_PASSWORD }}
