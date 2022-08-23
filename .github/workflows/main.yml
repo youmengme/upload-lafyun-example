@@ -14,6 +14,7 @@ jobs:
         env:
             USER_ACCOUNT: ${{ secrets.LAF_ACCOUNT }}
             PASSWORD: ${{ secrets.LAF_PASSWORD }}
+            APPID: ${{ secrets.LAF_APPID }}
             REGION: ${{ secrets.LAF_REGION }}
             BUCKET: ${{ secrets.LAF_BUCKET }}
             ASSET_PATH: './docs'
